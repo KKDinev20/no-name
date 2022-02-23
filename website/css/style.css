@@ -7,8 +7,8 @@ body {
   background-color: #f3fff4;
   font-weight: bold;
 }
-  
-.nav {
+
+#nav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -20,7 +20,7 @@ body {
   padding-top: 60px;
 }
 
-.nav a {
+#nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -29,15 +29,15 @@ body {
   transition: 0.3s;
 }
 
-.nav a:hover {
+#nav a:hover {
   color: #a5a986;
 }
 
-.nav a.active{
+#nav a.active{
   color: #bec2a3;
   }
 
-.nav .closebtn {
+#nav .closebtn {
   position: absolute;
   top: 0;
   font-size: 36px;
@@ -51,13 +51,14 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-  .nav {padding-top: 15px;}
-  .nav a {font-size: 18px;}
+  #nav {padding-top: 15px;}
+  #nav a {font-size: 18px;}
 }
 
-
 @media screen and (max-width: 700px) {
-  .nav {text-align: center;}
+  #nav {text-align: center;}
+  #nav a:not(.closebtn) {line-height:10vh;}
+  #first {margin-top: 17vh;}
 }
 
 h1 {
