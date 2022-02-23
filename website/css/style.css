@@ -50,8 +50,11 @@ body {
   padding: 16px;
 }
 
+#first {
+  margin-top: 4vh;
+}
+
 @media screen and (max-height: 450px) {
-  #nav {padding-top: 15px;}
   #nav a {font-size: 18px;}
 }
 
@@ -76,4 +79,8 @@ h1 {
   cursor: pointer;
   width: 50px;
   line-height: 50px;
+}
+
+#menu-toggle:hover {
+  background-color:#89b48d;
 }
