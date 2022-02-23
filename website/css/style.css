@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@200&family=Raleway:wght@300&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f3fff4;
+  font-weight: bold;
+}
+  
+.nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #29342a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #9e9e9e;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #a5a986;
+}
+
+.nav a.active{
+  color: #bec2a3;
+  }
+
+.nav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  margin-left: 0px;
+  margin-top: 15px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 18px;}
+}
+
+/*
+@media screen and (max-width: 700px) {
+  .nav {text-align: center;}
+}*/
+
+h1 {
+  text-align: center;
+  margin-top: -50px;
+}
+
+#menu-toggle {
+  font-size: 40px;
+  text-align: center;
+  background-color: #c6f1ca;
+  margin-left: 15px; 
+  margin-top: 20px;
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  line-height: 50px;
+}
