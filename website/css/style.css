@@ -98,3 +98,82 @@ h1 {
   color: rgb(6, 26, 85);
   background-color:white;
 }
+
+
+/* CONTACT PAGE CSS */
+
+#formh {
+  margin-bottom: 50px;
+  color:rgb(8, 26, 85);
+}
+
+#contact-form {
+  background-color: rgb(253, 253, 253) !important;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 25px;
+  padding: 20px;
+  padding-bottom: 30px;
+  width: 40%;
+  color: black !important;
+  left: 50%;
+  top: 50%;
+  position:fixed;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgb(8, 26, 85) !important;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  color: rgb(8, 26, 85);
+  padding: 12px 12px 12px 15px;
+  display: block;
+  user-select: none;
+  float: left;
+}
+
+input[type=submit] {
+  background-color: rgb(8, 26, 85);
+  margin-top: 10px;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(6, 20, 65);
+}
+
+.col1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  padding-right: 30px;
+}
+
+.col2 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  padding-right: 15px;
+}
+
+#subj-row {
+  padding-right: 15px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}

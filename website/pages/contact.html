@@ -3,22 +3,68 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/responsive-style.css.css">
+        <link rel="stylesheet" href="../css/responsive-style.css">
         <script src="../script/script-page.js"></script>
-        <title>About</title>
+        <title>Contact</title>
     </head>
+
     <body>
+
         <span id="menu-toggle" onclick="openNav()">&#9776;</span>
 
         <div id="nav">
-            <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&#10005;</a><br><br>
+            <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a><br><br>
             <a href="../index.html"  id="first" >Home</a>
             <a href="about.html">About</a>
             <a class="active" href="contact.html">Contact</a>
         </div>
 
         <div id="main">      <!-- put the page content in this div -->
-            <h1>&lt;Contact&gt;</h1>
+            <div class="form-container">
+                <form id="contact-form">
+                    <h1 id="formh">Contact us</h1>
+
+                    <div class="row">
+                        <div class="col1">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col2">
+                            <input type="text" id="fname" placeholder="Your first name.." required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col1">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col2">
+                            <input type="text" id="lname" placeholder="Your last name.." required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col1">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col2">
+                            <input type="email" id="email" placeholder="Your email.." required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col1">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col2">
+                            <textarea id="subject" placeholder="Write something.."rows="5" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row" id="subj-row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html> 
