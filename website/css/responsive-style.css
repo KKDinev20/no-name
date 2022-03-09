@@ -23,12 +23,121 @@
   #contact-form {
     width: 80%; 
   }
+
+  #nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    border-right: 2px solid rgb(202, 202, 202);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+  }
+
+  #nav a {
+      text-decoration: none;
+      font-size: 25px;
+      color: black;  
+      display: block;
+      transition: 0.3s;
+      user-select: none;
+  }
+
+  #nav a:not(#closebtn){
+      color:rgb(8, 26, 85);
+      background-color: white;
+      margin-top: 3px;
+      margin-right: 10px;
+      margin-left: 10px;  
+      padding: 12px 8px;
+      padding-left: 25px;
+  }
+
+  #nav a:hover:not(#closebtn) {
+      background-color: #f8f9fa;
+  }
+
+  #nav a.active{
+      color: #ffffff !important; 
+      background-color: rgb(8, 26, 85) !important;
+  }
+
+  #nav #closebtn {
+      position: absolute;
+      top: 0;
+      font-size: 36px;
+      margin-top: 25px;
+      margin-left: 35px;
+      user-select:none;
+  }
+
+  #main {
+      transition: margin-left .5s;
+      padding: 16px;
+      text-align: center;
+  }
+
+  #first {
+      margin-top: 10vh;
+  }
+
+  #menu-toggle, #closebtn {
+    display: block;
+  }
+
+  #menu-toggle {
+      position: absolute;
+      font-size: 40px;
+      text-align: center;
+      border:2px solid rgb(8, 26, 85);
+      color: white;
+      background-color:rgb(8, 26, 85);
+      border-radius: 10px;
+      margin-left: 25px; 
+      margin-top: 25px;
+      display: block;
+      cursor: pointer;
+      width: 50px;
+      line-height: 50px;
+      user-select: none;
+      font-weight: normal;
+  }
+
+  #menu-toggle:hover {
+    color: rgb(6, 26, 85);
+    background-color:white;
+  }
+
+  h1 {
+    margin-top: 20%;
+  }
 }
 
-label {
-  text-align: left;
-}
+@media screen and (min-width: 801px) {
+  #nav {
+    justify-content:end;
+    display:flex;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 8px;
+  }
 
-body {
-  margin: 0;
+  #logo {
+    position: fixed;
+    left: 0;
+    margin: 1.2% 1.2%;
+    max-width: 6%;
+  }
+
+  .nav-buttons {
+    margin: 20px 0px 0px 0px;
+    padding: 12px 36px;
+  }
+
+  .nav-buttons:not(:first-child) {
+    border-right: 3px solid #ddd;
+  }
 }
