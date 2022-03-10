@@ -21,7 +21,8 @@
 
 @media screen and (max-width: 800px) {
   #contact-form {
-    width: 80%; 
+    width: 80%;
+    margin-top: 10%;
   }
 
   #nav {
@@ -113,7 +114,28 @@
   }
 
   h1 {
-    margin-top: 20%;
+    margin-top: 13%;
+  }
+
+  #mission {
+    width: 300px;
+  }
+
+  .member {
+    right: 35px;
+  }
+
+  #team {
+    flex-direction: column;  
+    padding-right: 15%;
+  }
+
+  .member {
+    max-height: 450px;
+  }
+
+  .member, .member > img {
+    max-height: 300px;
   }
 }
 
@@ -123,10 +145,10 @@
     display:flex;
     border-bottom: 3px solid #ddd;
     padding-bottom: 8px;
+    background-color: white;
   }
 
   #logo {
-    position: fixed;
     left: 0;
     margin: 1.2% 1.2%;
     max-width: 6%;
@@ -139,5 +161,31 @@
 
   .nav-buttons:not(:first-child) {
     border-right: 3px solid #ddd;
+  }
+
+  h1 {
+    margin-top: 10;
+  }
+
+
+}
+
+@media screen and (max-width: 1500px) and (min-width: 801px) {
+  #contact-form,
+  #mission {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .form-container {
+    padding-bottom: 5%;
+  }
+
+  .member, .member > img {
+    max-height: 223px;
+  }
+
+  #team, .member, .member-title, .member, .member-desc {
+    overflow: hidden;
   }
 }

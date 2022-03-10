@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body, html {
+  height:100%;
+  display:block;
+}
+
 body {
   margin: 0;
 }
@@ -21,10 +26,15 @@ h1 {
     padding: 3%;
     color: black;
     font-size: 2.5em;
+    color: white;
 }
 
-#main {
+body {
     text-align: center;
+    background-image: url(https://media.discordapp.net/attachments/772900414231674950/951549389195849808/MapChart_Map_1.png?width=1283&height=676); 
+    background-position: center;
+    background-size: cover;
+    height: 100%;
 }
 
 #menu-toggle, #closebtn {
@@ -37,7 +47,12 @@ label {
   text-align: left;
 }
 
-#contact-form {
+form {
+    margin-bottom: 50px;
+}
+
+#contact-form, #mission {
+  margin-top: 2%;
   background-color: rgb(253, 253, 253) !important;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
   border-radius: 25px;
@@ -47,9 +62,10 @@ label {
   color: black !important;
   left: 50%;
   top: 50%;
-  position:fixed;
-  transform: translate(-50%, -50%);
   z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
 }
 
 input[type=text], input[type=email], textarea {
@@ -106,4 +122,63 @@ input[type=submit]:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+/* ABOUT US PAGE CSS */
+
+#team, .member, .member-title, .member, .member-desc {
+  margin: 0;
+  overflow: hidden;
+}
+
+#team {
+  padding: 4% 15% 3% 15%; 
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.member {
+  margin: 40px;
+  position: relative;
+  max-width: 350px;
+  max-height: 350px;
+  box-shadow: 0 40px 60px -6px black;
+}
+
+.member-title {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #6184a8;
+  padding: 2%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.member, .member > img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.member-desc {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: white;
+  overflow-y: scroll;
+  transition: 0.8s ease;
+  overflow: hidden;
+}
+
+.member:hover .member-desc {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
 }
