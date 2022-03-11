@@ -170,7 +170,7 @@
 
 }
 
-@media screen and (max-width: 1500px) and (min-width: 801px) {
+@media screen and (max-width: 1600px) and (min-width: 801px) {
   #contact-form,
   #mission {
     margin-top: 5%;
@@ -182,7 +182,7 @@
   }
 
   .member, .member > img {
-    max-height: 223px;
+    max-height: 255px;
   }
 
   #team, .member, .member-title, .member, .member-desc {
