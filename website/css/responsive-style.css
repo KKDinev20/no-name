@@ -137,6 +137,16 @@
   .member, .member > img {
     max-height: 300px;
   }
+
+  #logo-dekstop {
+    display: none;
+  }
+
+  #logo-mobile {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 801px) {
@@ -144,14 +154,8 @@
     justify-content:end;
     display:flex;
     border-bottom: 3px solid #ddd;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
     background-color: white;
-  }
-
-  #logo {
-    left: 0;
-    margin: 1.2% 1.2%;
-    max-width: 6%;
   }
 
   .nav-buttons {
@@ -167,7 +171,17 @@
     margin-top: 10;
   }
 
+  #logo-dekstop {
+    left: 0;
+    margin: 1.2% 1.2%;
+    width: 150px;
+    height: auto;
+    margin-right: auto;
+  }
 
+  .home-button {
+    border-left: 3px solid #ddd;
+  }
 }
 
 @media screen and (max-width: 1600px) and (min-width: 801px) {

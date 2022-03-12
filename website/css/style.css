@@ -41,6 +41,10 @@ body {
     display: none;
 }
 
+#logo-mobile {
+    display: none;
+}
+
 /* CONTACT PAGE CSS */
 
 label {
