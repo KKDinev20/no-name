@@ -1,0 +1,188 @@
+[
+  {
+    "country": "South Sudan",
+    "admit2UN": 2011,
+    "formation": "split from Sudan",
+    "pop2022": "11618.5110"
+  },
+  {
+    "country": "Montenegro",
+    "admit2UN": 2006,
+    "formation": "seceded from Yugoslavia, later split from Serbia and Montenegro",
+    "pop2022": "627.9500"
+  },
+  {
+    "country": "Serbia",
+    "admit2UN": 2000,
+    "formation": "seceded from Yugoslavia, later split from Serbia and Montenegro",
+    "pop2022": "8653.0160"
+  },
+  {
+    "country": "Palau",
+    "admit2UN": 1994,
+    "formation": "graduated from U.N. trust",
+    "pop2022": "18.2330"
+  },
+  {
+    "country": "North Macedonia",
+    "admit2UN": 1993,
+    "formation": "seceded from Yugoslavia",
+    "pop2022": "2081.3040"
+  },
+  {
+    "country": "Eritrea",
+    "admit2UN": 1993,
+    "formation": "split from Ethiopia",
+    "pop2022": "3662.2440"
+  },
+  {
+    "country": "Slovakia",
+    "admit2UN": 1993,
+    "formation": "split from Czechoslovakia",
+    "pop2022": "5460.1930"
+  },
+  {
+    "country": "Czech Republic",
+    "admit2UN": 1993,
+    "formation": "split from Czechoslovakia",
+    "pop2022": "10736.7840"
+  },
+  {
+    "country": "Slovenia",
+    "admit2UN": 1992,
+    "formation": "seceded from Yugoslavia",
+    "pop2022": "2078.0340"
+  },
+  {
+    "country": "Armenia",
+    "admit2UN": 1992,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "2971.9660"
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "admit2UN": 1992,
+    "formation": "seceded from Yugoslavia",
+    "pop2022": "3249.3170"
+  },
+  {
+    "country": "Georgia",
+    "admit2UN": 1992,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "3968.7380"
+  },
+  {
+    "country": "Moldova",
+    "admit2UN": 1992,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "4013.1710"
+  },
+  {
+    "country": "Croatia",
+    "admit2UN": 1992,
+    "formation": "seceded from Yugoslavia",
+    "pop2022": "4059.2860"
+  },
+  {
+    "country": "Turkmenistan",
+    "admit2UN": 1992,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "6201.9430"
+  },
+  {
+    "country": "Kyrgyzstan",
+    "admit2UN": 1992,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "6728.2710"
+  },
+  {
+    "country": "Tajikistan",
+    "admit2UN": 1992,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "9957.4640"
+  },
+  {
+    "country": "Azerbaijan",
+    "admit2UN": 1992,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "10300.2050"
+  },
+  {
+    "country": "Kazakhstan",
+    "admit2UN": 1992,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "19205.0430"
+  },
+  {
+    "country": "Uzbekistan",
+    "admit2UN": 1992,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "34382.0840"
+  },
+  {
+    "country": "Marshall Islands",
+    "admit2UN": 1991,
+    "formation": "fostered by United States",
+    "pop2022": "60.0570"
+  },
+  {
+    "country": "Micronesia",
+    "admit2UN": 1991,
+    "formation": "graduated from U.N. trust",
+    "pop2022": "117.4890"
+  },
+  {
+    "country": "Estonia",
+    "admit2UN": 1991,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "1321.9100"
+  },
+  {
+    "country": "Latvia",
+    "admit2UN": 1991,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "1848.8370"
+  },
+  {
+    "country": "Lithuania",
+    "admit2UN": 1991,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "2661.7080"
+  },
+  {
+    "country": "Belarus",
+    "admit2UN": 1991,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "9432.8000"
+  },
+  {
+    "country": "Russia",
+    "admit2UN": 1991,
+    "formation": "remainder of U.S.S.R.",
+    "pop2022": "145805.9470"
+  },
+  {
+    "country": "Namibia",
+    "admit2UN": 1990,
+    "formation": "rebelled against South Africa",
+    "pop2022": "2633.8740"
+  },
+  {
+    "country": "Yemen",
+    "admit2UN": 1990,
+    "formation": "merged Yemen Arab Republic & South Yemen",
+    "pop2022": "31154.8670"
+  },
+  {
+    "country": "Germany",
+    "admit2UN": 1990,
+    "formation": "merged East & West Germany",
+    "pop2022": "83883.5960"
+  },
+  {
+    "country": "Ukraine",
+    "admit2UN": 1945,
+    "formation": "seceded from U.S.S.R.",
+    "pop2022": "43192.1220"
+  }
+]

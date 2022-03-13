@@ -3,26 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive-style.css">
-        <script src="script/script-page.js"></script>
+        <link rel="stylesheet" href="website-files/css/style.css">
+        <link rel="stylesheet" href="website-files/css/responsive-style.css">
+        <script src="website-files/script/script-page.js"></script>
         <title>Home</title>
     </head>
-    <body>
+    <body style="background:none">
         <span id="menu-toggle" onclick="openNav()">&#9776;</span>
 
         <div id="nav">
             <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&#10005;</a><br><br>
-            <img src="Images/logo-horizontal.png" id="logo-dekstop" href="#">
-            <img src="Images/logo-vertical.png" id="logo-mobile" href="#">
+            <img src="website-files/Images/logo-horizontal.png" id="logo-dekstop" href="#">
+            <img src="website-files/Images/logo-vertical.png" id="logo-mobile" href="#">
             <a class="nav-buttons home-button" href="index.html"  id="first">Home</a>
-            <a class="nav-buttons" href="pages/about.html">About</a>
-            <a class="nav-buttons" href="pages/contact.html">Contact</a>
+            <a class="nav-buttons" href="website-files/pages/about.html">About</a>
+            <a class="nav-buttons" href="website-files/pages/contact.html">Contact</a>
         </div>
 
-        <div id="main">      <!-- put the page content in this div -->
-            <h1>&lt;&#x2f;Home&gt;</h1>
+        <div class="details">
+            <h2 class="country"></h2>
+            <p class="females"></p>
+            <p class="males"></p>
+            <p class="formation"></p>
         </div>
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js"></script>
+       <script src="map-files/js/main.js"></script>
     
     </body>
 </html>
