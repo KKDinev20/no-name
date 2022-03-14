@@ -190,14 +190,14 @@ input[type=submit]:hover {
 
 /* MAP CSS */
 path {
-  stroke: white;
-  stroke-width: 0.25px;
+  stroke: rgb(7, 7, 7);
+  stroke-width: 0.45px;
   fill: #808080;
 }
 .details {
   top: 0px;
   visibility: hidden;
-  width: 300px;
+  width: fit-content;
   padding: 30px;
   height: 100%;
   opacity: 0.4;
