@@ -1,3 +1,25 @@
+const overlay = document.getElementById('overlay');
+const popup = document.getElementById('popup');
+
+overlay.addEventListener('click', () => {
+    const popups = document.querySelectorAll('.popup.active')
+    popups.forEach(popup => {
+        closePopup(popup);
+    })
+})
+
+function openPopup(popup){
+    if(popup == null) return
+    popup.classList.add('active');
+    overlay.classList.add('active');
+}
+function closePopup(popup){
+    if(popup == null) return
+    popup.classList.remove('active');
+    overlay.classList.remove('active');
+}
+
+
 var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
@@ -36,7 +58,7 @@ d3.queue()
 function drawMap(world, data, data1) {
     // geoMercator projection
     var projection = d3.geoMercator() //d3.geoOrthographic()
-        .scale(200)
+        .scale(130)
         .translate([width / 2, height / 1.5]);
 
     // geoPath projection
@@ -83,6 +105,13 @@ function drawMap(world, data, data1) {
         .attr("d", path)
         .style("fill", function (d) {
             return d.details && d.details.total ? color(d.details.total) : "#568F56";
+        })
+        .on('click', function(d) {
+            openPopup(popup);
+            d3.select(".title")
+            .text(d.properties.name)
+            d3.select(".popup-body")
+            .text(d.properties.name)
         })
         .on('mouseover', function (d) {
             d3.select(this)
