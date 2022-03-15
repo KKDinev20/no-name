@@ -20,9 +20,9 @@ var map = svg.append("g")
     .attr("class", "map");
 
 d3.queue()
-    .defer(d3.json, "src/data/50m.json")
-    .defer(d3.json, "src/data/population.json")
-    .defer(d3.json, "src/data/data.json")
+    .defer(d3.json, "map-files/data/50m.json")
+    .defer(d3.json, "map-files/data/population.json")
+    .defer(d3.json, "map-files/data/data.json")
     .await(function (error, world, data, data1) {
         if (error) {
             console.error('Oh dear, something went wrong: ' + error);
@@ -36,7 +36,7 @@ d3.queue()
 function drawMap(world, data, data1) {
     // geoMercator projection
     var projection = d3.geoMercator() //d3.geoOrthographic()
-        .scale(130)
+        .scale(200)
         .translate([width / 2, height / 1.5]);
 
     // geoPath projection
