@@ -58,7 +58,7 @@ d3.queue()
 function drawMap(world, data, data1) {
     // geoMercator projection
     var projection = d3.geoMercator() //d3.geoOrthographic()
-        .scale(130)
+        .scale(200)
         .translate([width / 2, height / 1.5]);
 
     // geoPath projection
