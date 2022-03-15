@@ -8,6 +8,12 @@
 <p><h3>Our idea was to make a website that shows each country's demographics such as the population and the year of foundation.</h3></p>
 <br>
 <h1>📋 Details</h1>
+<p><h2>The project represents a website with three categories: Home, About and Contact. </h2>
+  <ul>
+    <h3><li><p> Home - in Home you can find the world map. When you hover on a country you will see brief information about the country. When you click on it you can learn more about the country.</p></li>  
+    <li><p> About - everything about the site's mission and its creators is shown there. When you hover on a team member's photo you will information about them.</p></li>  
+    <li><p> Contact - if you disagree with something from the project or you want to make a suggestion, you can send us a respond.</p></li></h3> 
+  </ul>
 <br>
 <h1>👨‍💻 Team Members </h1>
 <ul>
@@ -15,15 +21,17 @@
 <li>Front-end Developer – <a href="https://github.com/BPBoyadzhiev20"> Bozhidar Boyadzhiev</a></li><br>
 <li>Back-end Developer – <a href="https://github.com/MDVasilevl20"> Maksim Vasilev </a></li><br>
 <li>Designer – <a href="https://github.com/VVBolashikova20"> Victoria Bolashikova </a></li><br></h3>
+  </ul>
 <br>
 <h1>💻 Languages and tools </h1>
 <p float="left">
  <img height = 50 src="https://cdn.discordapp.com/attachments/941026316482936902/952555233496666122/html5-logo-png-transparent.png" /> </a> 
  <img height = 50 src="https://cdn.discordapp.com/attachments/941026316482936902/952554338599964692/kisspng-web-development-cascading-style-sheets-css3-html-5ae480845f38f3.0110241015249245483901.png" /> </a> 
  <img height = 50 src="https://cdn.discordapp.com/attachments/941026316482936902/952556413652176896/kindpng_1718046.png" /> </a> 
- <img height = 50 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" /></a> 
+ <img height = 50  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/2048px-JSON_vector_logo.svg.png" /></a> 
+  <img height = 50 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" /></a> 
+ <img height = 50  src="https://cdn.discordapp.com/attachments/941026316482936902/953303972226142278/Picture1.png" /></a> 
  <img height = 50  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Calligrakrita-base.svg/600px-Calligrakrita-base.svg.png?20220209122951" /></a> 
-  <img height = 50  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/2048px-JSON_vector_logo.svg.png" /></a> 
 </p>
 <br>
 <h1>⚙️ Download</h1>
