@@ -10,9 +10,9 @@
 <h1>📋 Details</h1>
 <p><h2>The project represents a website with three categories: Home, About and Contact. </h2>
   <ul>
-    <h3><li><p> Home - in Home you can find the world map. When you hover on a country you will see brief information about the country. When you click on it you can learn more about the country.</p></li>  
-    <li><p> About - everything about the site's mission and its creators is shown there. When you hover on a team member's photo you will information about them.</p></li>  
-    <li><p> Contact - if you disagree with something from the project or you want to make a suggestion, you can send us a respond.</p></li></h3> 
+    <h3><li><p> Home - there you can find the world map.  When you click on it you can learn more about the country.</p></li>  
+    <li><p> About - everything about the site's mission and its creators is shown there. When you hover on a team member's photo you find information about them.</p></li>  
+    <li><p> Contact - if you disagree with something from the project or you want to make a suggestion, you can send us your feedback.</p></li></h3> 
   </ul>
 <br>
 <h1>👨‍💻 Team Members </h1>
