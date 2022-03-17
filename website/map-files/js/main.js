@@ -82,7 +82,7 @@ function drawMap(world, population, history) {
 
     history.forEach(function (d) {
         historyById[d.country] = {
-            information: +d.information,
+            information: d.information,
             flag : d.flag
         }
     });
@@ -111,7 +111,7 @@ function drawMap(world, population, history) {
             d3.select(".title")
             .text(d.properties.name)
             d3.select(".information")
-            .text(d.properties.name);
+            .text(d.history.information);
             document.getElementById('country-flag').src = d.history.flag;
 
         })

@@ -243,6 +243,16 @@ path {
 .popup-body{
   padding: 10px 15px;
 }
+#country-flag{
+  width: 20%;
+  height: 14%;
+  padding-right: 15px;
+  float: left;
+  position: static;
+}
+.information{
+  text-align: justify;
+}
 #overlay{
   position: fixed;
   opacity: 0;
