@@ -1,188 +1,42 @@
 [
   {
-    "country": "South Sudan",
-    "admit2UN": 2011,
-    "formation": "split from Sudan",
-    "pop2022": "11618.5110"
+    "country": "Afghanistan",
+    "information": "Afghanistan remained neutral during World War I, despite German encouragement of anti-British feelings and Afghan rebellion along the borders of British India. The Afghan king's policy of neutrality was not universally popular within the country, however. Habibullah, Abdur Rahman's son and successor, was assassinated in 1919, possibly by family members opposed to British influence. His third son, Amanullah, regained control of Afghanistan's foreign policy after launching the Third Anglo-Afghan war with an attack on India in the same year. During the ensuing conflict, the war-weary British relinquished their control over Afghan foreign affairs by signing the Treaty of Rawalpindi in August 1919. In commemoration of this event, Afghans celebrate August 19 as their Independence Day.",
+    "flag": "https://www.worldometers.info/img/flags/af-flag.gif"
   },
   {
-    "country": "Montenegro",
-    "admit2UN": 2006,
-    "formation": "seceded from Yugoslavia, later split from Serbia and Montenegro",
-    "pop2022": "627.9500"
+    "country": "Albania",
+    "information": "Albania began as a colony established by the Greeks over 600 years before Christ. After periods under the control of the Romans, Byzantines, Normans, Venetians, Slavs, and kings of Naples, Albania came under the control of the Ottoman Empire for over 400 years. Independence was achieved in 1912, although the country was occupied by Austria-Hungary and Italy, countries which had been instrumental in its creation. Eventually, a tribal chief named Ahmed Zogu was named president of the republic in 1924, though he named himself King Zog I, four years later. A socialist republic was established in 1946, after World War II. During that war, a resistance leader emerged, named Enver Hoxha. He had seized power in 1944. After 1946, the country was virtually closed to the outside world and a totalitarian regime developed. Hoxha became closely involved with China, following his break with the Soviet Union over Communist doctrine. That link, too, was broken in 1977 and Albania all but ceased to participate in any world affairs. Hoxha died in 1985 and by the early 1990s, anarchy and chaos was the norm in the country. In 1994, a measure of order was restored, only to have problems return in 1997. NATO came to help establish an Albanian army in 1998 at a time when ethnic Albanians began rebelling in Kosovo (Yugoslavia) and were ultimately driven out of that province and into Albania. In late 1998, internal disarray continued with violence erupting between the Democratic Party and the Socialists, who had been in control since 1997.",
+      "flag": "https://www.worldometers.info/img/flags/al-flag.gif"
   },
   {
-    "country": "Serbia",
-    "admit2UN": 2000,
-    "formation": "seceded from Yugoslavia, later split from Serbia and Montenegro",
-    "pop2022": "8653.0160"
+    "country": "Algeria",
+    "information": "Algeria is an ancient country with a history that extends back several thousand years to the time of the Phoenicians. The Romans, followed by the Germanic Vandal tribes and the Byzantines all ruled the area. When Islam grew mighty in the 8th century A.D., the Berbers of Algeria were converted to that religion and a unique civilization flourished. Some eight centuries later, Spain conquered Algiers and other cities but was driven out by Barbarossa who brought Algeria into the Turkish Ottoman Empire. From this point, piracy became an important money-making tool for the country, so much so that by 1800, the US, England, and France joined in an effort to combat piracy in the Mediterranean. Ottoman rule over the country was brought to an end by the French in 1830. In 1848, following an Islamic rebellion, France made Algeria a legal part of France. In the mid-1950s, a guerilla effort arose to oust the French led by the FLN (Front de Liberation Nationale) and in 1962, independence was declared. Immediately, about a million colonists left Algeria for France. Times have been turbulent for Algeria since independence, including close relations with the Soviet Union and a struggle between fundamentalist Islamists and the military. Since 1992, over 40,000 people have died due to civil unrest and assassinations. In 1999, elections were held; only one candidate remained in the race: Abdelazziz Bouteflika. His government reached agreement with the Islamic rebels in September 1999.",
+    "flag" : "https://www.worldometers.info/img/flags/ag-flag.gif"
   },
   {
-    "country": "Palau",
-    "admit2UN": 1994,
-    "formation": "graduated from U.N. trust",
-    "pop2022": "18.2330"
+    "country": "Angola",
+    "information": "Angola's land has been inhabited by Bantu tribes for thousands of years. The Portuguese arrived in 1575 and began an enormous slave trade from Angola to Brazil that took over 3 million people into slavery over the course of 3 centuries. By the late 19th century, Angola was a colony of Portugal, with Portuguese in control of the local government, commerce, and agriculture. But by the 1950s, there was a call for independence, led by the National Front. Guerilla activity soon ensued. The Portuguese ultimately fled and independence was declared on November 11, 1975. Peace did not arrive, however, with civil war erupting between the MPLA and UNITA factions. Though the MPLA set up a Marxist regime, many parts of the country were actually under UNITA control. Fighting continued through the 1980s and it was not until 1991 that a cease-fire was obtained between the government and UNITA. It was short-lived, however, since renewed fighting began after the results of the 1992 elections (the first in the country since 1975). The MPLA won but UNITA's Jonas Savimbi did not accept the election outcome. Though the United Nations tried for 4 years to get the situation under control, the conflict continues and has taken at least 100,000 lives since the 1970s.",
+    "flag" : "https://www.worldometers.info/img/flags/ao-flag.gif"
   },
   {
-    "country": "North Macedonia",
-    "admit2UN": 1993,
-    "formation": "seceded from Yugoslavia",
-    "pop2022": "2081.3040"
+    "country": "Antigua",
+    "information": "Antigua was claimed by Christopher Columbus in 1493 and settled by the British some 140 years later. Tobacco and sugar were the two commercial mainstays but with slavery abolished in 1834, several natural disasters occurring in the 1840s, and the closing of a Royal Dockyard in 1854, the economy suffered. Independence was granted in 1981 and the Antigua Labor Party remains at the government helm. Tourism forms the principal economic base of the country today.",
+    "flag" : "https://www.worldometers.info/img/flags/ac-flag.gif"
   },
   {
-    "country": "Eritrea",
-    "admit2UN": 1993,
-    "formation": "split from Ethiopia",
-    "pop2022": "3662.2440"
-  },
-  {
-    "country": "Slovakia",
-    "admit2UN": 1993,
-    "formation": "split from Czechoslovakia",
-    "pop2022": "5460.1930"
-  },
-  {
-    "country": "Czech Republic",
-    "admit2UN": 1993,
-    "formation": "split from Czechoslovakia",
-    "pop2022": "10736.7840"
-  },
-  {
-    "country": "Slovenia",
-    "admit2UN": 1992,
-    "formation": "seceded from Yugoslavia",
-    "pop2022": "2078.0340"
+    "country": "Argentina",
+    "information": "Europeans first discovered Argentina in 1502 during the voyage of Amerigo Vespucci. In 1580 the Spanish founded a colony in Buenos Aires. By 1800 Buenos Aires had a population of 50,000. In 1816 Argentina declared it independence from Spain. In 1824 a constitutional assembly passed a constitution. Conservative political forces for the rest of the 19th century dominated Argentina. During this period the country grew rapidly. In 1916 Radical forces took control of the government. They were ousted in 1935. In 1946 Juan Peron took control of the government. Peron was ousted in 1955 by the military. The military maintained power until 1973, when violence forced the military to allow the return of Peron. He died the next year and his third wife Isabella Peron took over. She was able to maintain power for only two years. The military regained power and instituted a very repressive regime in which 20,000 leftist disappeared. When Argentina occupied the Falkland Islands in 1982 the British defeated the Argentineans and reoccupied the Falklands. The defeat resulted in the fall of military government. In 1989 Carlos Memen became the President of the country and began serious economic and political reform.",
+    "flag" : "https://www.worldometers.info/img/flags/ar-flag.gif"
   },
   {
     "country": "Armenia",
-    "admit2UN": 1992,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "2971.9660"
-  },
-  {
-    "country": "Bosnia and Herzegovina",
-    "admit2UN": 1992,
-    "formation": "seceded from Yugoslavia",
-    "pop2022": "3249.3170"
-  },
-  {
-    "country": "Georgia",
-    "admit2UN": 1992,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "3968.7380"
-  },
-  {
-    "country": "Moldova",
-    "admit2UN": 1992,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "4013.1710"
-  },
-  {
-    "country": "Croatia",
-    "admit2UN": 1992,
-    "formation": "seceded from Yugoslavia",
-    "pop2022": "4059.2860"
-  },
-  {
-    "country": "Turkmenistan",
-    "admit2UN": 1992,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "6201.9430"
-  },
-  {
-    "country": "Kyrgyzstan",
-    "admit2UN": 1992,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "6728.2710"
-  },
-  {
-    "country": "Tajikistan",
-    "admit2UN": 1992,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "9957.4640"
-  },
-  {
-    "country": "Azerbaijan",
-    "admit2UN": 1992,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "10300.2050"
-  },
-  {
-    "country": "Kazakhstan",
-    "admit2UN": 1992,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "19205.0430"
-  },
-  {
-    "country": "Uzbekistan",
-    "admit2UN": 1992,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "34382.0840"
-  },
-  {
-    "country": "Marshall Islands",
-    "admit2UN": 1991,
-    "formation": "fostered by United States",
-    "pop2022": "60.0570"
-  },
-  {
-    "country": "Micronesia",
-    "admit2UN": 1991,
-    "formation": "graduated from U.N. trust",
-    "pop2022": "117.4890"
-  },
-  {
-    "country": "Estonia",
-    "admit2UN": 1991,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "1321.9100"
-  },
-  {
-    "country": "Latvia",
-    "admit2UN": 1991,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "1848.8370"
-  },
-  {
-    "country": "Lithuania",
-    "admit2UN": 1991,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "2661.7080"
-  },
-  {
-    "country": "Belarus",
-    "admit2UN": 1991,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "9432.8000"
+    "information": "After the destruction of the Seleucid Empire, the first Armenian state was founded in 190 BC. At its zenith, from 95 to 55 BC, Armenia extended its rule over the area of what is now eastern Turkey. For a time, Armenia was the strongest state in the Roman East. It became part of the Roman Empire and adopted a Western political, philosophical, and religious orientation. In 301 AD, Armenia became the first nation to adopt Christianity as a state religion, establishing in the 6th century a church that still exists independently of both the Catholic and the Eastern Orthodox churches. During its later political eclipses, Armenia depended on the church to preserve and protect its unique identity. Between the 4th and 19th centuries, Armenia was conquered and ruled by, among others, Persians, Byzantines, Arabs, Mongols, and Turks. For a brief period from 1918 to 1920, it was an independent republic. In late 1920, the communists came to power, and in 1922, Armenia became part of the Trans-Caucasian Soviet Socialist Republic. In 1936, it became the Armenian Soviet Socialist Republic. Armenia declared its independence from the Soviet Union on September 23, 1991.",
+    "flag" : "https://www.worldometers.info/img/flags/am-flag.gif"
   },
   {
     "country": "Russia",
-    "admit2UN": 1991,
-    "formation": "remainder of U.S.S.R.",
-    "pop2022": "145805.9470"
-  },
-  {
-    "country": "Namibia",
-    "admit2UN": 1990,
-    "formation": "rebelled against South Africa",
-    "pop2022": "2633.8740"
-  },
-  {
-    "country": "Yemen",
-    "admit2UN": 1990,
-    "formation": "merged Yemen Arab Republic & South Yemen",
-    "pop2022": "31154.8670"
-  },
-  {
-    "country": "Germany",
-    "admit2UN": 1990,
-    "formation": "merged East & West Germany",
-    "pop2022": "83883.5960"
-  },
-  {
-    "country": "Ukraine",
-    "admit2UN": 1945,
-    "formation": "seceded from U.S.S.R.",
-    "pop2022": "43192.1220"
+    "information": "After the destruction of the Seleucid Empire, the first Armenian state was founded in 190 BC. At its zenith, from 95 to 55 BC, Armenia extended its rule over the area of what is now eastern Turkey. For a time, Armenia was the strongest state in the Roman East. It became part of the Roman Empire and adopted a Western political, philosophical, and religious orientation. In 301 AD, Armenia became the first nation to adopt Christianity as a state religion, establishing in the 6th century a church that still exists independently of both the Catholic and the Eastern Orthodox churches. During its later political eclipses, Armenia depended on the church to preserve and protect its unique identity. Between the 4th and 19th centuries, Armenia was conquered and ruled by, among others, Persians, Byzantines, Arabs, Mongols, and Turks. For a brief period from 1918 to 1920, it was an independent republic. In late 1920, the communists came to power, and in 1922, Armenia became part of the Trans-Caucasian Soviet Socialist Republic. In 1936, it became the Armenian Soviet Socialist Republic. Armenia declared its independence from the Soviet Union on September 23, 1991.",
+    "flag" : "https://www.worldometers.info/img/flags/rs-flag.gif"
   }
 ]

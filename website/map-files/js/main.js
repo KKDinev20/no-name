@@ -45,17 +45,16 @@ d3.queue()
     .defer(d3.json, "map-files/data/50m.json")
     .defer(d3.json, "map-files/data/population.json")
     .defer(d3.json, "map-files/data/data.json")
-    .await(function (error, world, data, data1) {
+    .await(function (error, world, population, history) {
         if (error) {
             console.error('Oh dear, something went wrong: ' + error);
         }
         else {
-            drawMap(world, data, data1);
+            drawMap(world, population, history);
         }
-        console.log(data1)
     });
 
-function drawMap(world, data, data1) {
+function drawMap(world, population, history) {
     // geoMercator projection
     var projection = d3.geoMercator() //d3.geoOrthographic()
         .scale(200)
@@ -71,9 +70,9 @@ function drawMap(world, data, data1) {
 
     var features = topojson.feature(world, world.objects.countries).features;
     var populationById = {};
-    var formationById = {};
+    var historyById = {};
 
-    data.forEach(function (d) {
+    population.forEach(function (d) {
         populationById[d.country] = {
             total: +d.total,
             females: +d.females,
@@ -81,15 +80,16 @@ function drawMap(world, data, data1) {
         }
     }); 
 
-    data1.forEach(function (d) {
-        formationById[d.country] = {
-            admit2UN: +d.admit2UN
+    history.forEach(function (d) {
+        historyById[d.country] = {
+            information: +d.information,
+            flag : d.flag
         }
     });
 
     features.forEach(function (d) {
-        d.details = populationById[d.properties.name] ? populationById[d.properties.name] : {};
-        d.details1 = formationById[d.properties.name] ? formationById[d.properties.name] : {};
+        d.population = populationById[d.properties.name] ? populationById[d.properties.name] : {};
+        d.history = historyById[d.properties.name] ? historyById[d.properties.name] : {};
     });
 
     map.append("g")
@@ -104,35 +104,22 @@ function drawMap(world, data, data1) {
         })
         .attr("d", path)
         .style("fill", function (d) {
-            return d.details && d.details.total ? color(d.details.total) : "#568F56";
+            return d.population && d.population.total ? color(d.population.total) : "#568F56";
         })
         .on('click', function(d) {
             openPopup(popup);
             d3.select(".title")
             .text(d.properties.name)
-            d3.select(".popup-body")
-            .text(d.properties.name)
+            d3.select(".information")
+            .text(d.properties.name);
+            document.getElementById('country-flag').src = d.history.flag;
+
         })
         .on('mouseover', function (d) {
             d3.select(this)
                 .style("stroke", "white")
                 .style("stroke-width", 0.7)
                 .style("cursor", "pointer");
-
-            d3.select(".country")
-                .text(d.properties.name);
-
-            d3.select(".females")
-                .text(d.details && d.details.females && "Female " + d.details.females || "¯\\_(ツ)_/¯");
-
-            d3.select(".males")
-                .text(d.details && d.details.males && "Male " + d.details.males || "¯\\_(ツ)_/¯");
-
-            d3.select(".formation")
-                .text(d.details1 && d.details1.admit2UN && "Formation " + d.details1.admit2UN || "¯\\_(ツ)_/¯");
-
-            d3.select('.details')
-                .style('visibility', "visible")
         })
         .on('mouseout', function (d) {
             d3.select(this)
