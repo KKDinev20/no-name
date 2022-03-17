@@ -269,3 +269,21 @@ path {
   pointer-events: all;
   
 }
+.arrows{
+  display: flex;
+  float: right;
+  padding-bottom: 10px;
+}
+#left-arrow{
+  padding-right: 10px;
+  font-size: 200%;
+  border:none;
+  background-color: white;
+}
+#right-arrow{
+  padding-left: 10px;
+  padding-right: 30px;
+  font-size: 200%;
+  border:none;
+  background-color: white;
+}

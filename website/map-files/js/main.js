@@ -20,6 +20,18 @@ function closePopup(popup){
 }
 
 
+var counter = 0;
+
+function changeInfoPartLeft(){
+    if(counter > 0)
+        counter--;
+}
+function changeInfoPartRight(){
+    if(counter < 4)
+        counter++;
+}
+
+
 var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
@@ -108,23 +120,21 @@ function drawMap(world, population, history) {
         })
         .on('click', function(d) {
             var info = d.history.information;
-            var partinfo = [{},{},{}];
+            var partinfo = [{},{},{},{},{}];
             for(let i = 0; i < 3; i++)
             {
                 let start = i * 600;
                 partinfo[i] = info.substr(start, 600);
             }
-            console.log(partinfo[0]);
-            let counter = 0;
+            
+
             openPopup(popup);
             d3.select(".title")
             .text(d.properties.name)
             d3.select(".information")
-            .text(partinfo[0] + '...');
+            .text(partinfo[counter] + '...');
             document.getElementById('country-flag').src = d.history.flag;
-
             
-
         })
         .on('mouseover', function (d) {
             d3.select(this)
