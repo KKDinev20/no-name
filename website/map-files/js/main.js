@@ -107,12 +107,23 @@ function drawMap(world, population, history) {
             return d.population && d.population.total ? color(d.population.total) : "#568F56";
         })
         .on('click', function(d) {
+            var info = d.history.information;
+            var partinfo = [{},{},{}];
+            for(let i = 0; i < 3; i++)
+            {
+                let start = i * 600;
+                partinfo[i] = info.substr(start, 600);
+            }
+            console.log(partinfo[0]);
+            let counter = 0;
             openPopup(popup);
             d3.select(".title")
             .text(d.properties.name)
             d3.select(".information")
-            .text(d.history.information);
+            .text(partinfo[0] + '...');
             document.getElementById('country-flag').src = d.history.flag;
+
+            
 
         })
         .on('mouseover', function (d) {
