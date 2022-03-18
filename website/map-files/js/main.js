@@ -1,5 +1,6 @@
 const overlay = document.getElementById('overlay');
 const popup = document.getElementById('popup');
+var counter = 0;
 
 overlay.addEventListener('click', () => {
     const popups = document.querySelectorAll('.popup.active')
@@ -18,17 +19,6 @@ function closePopup(popup){
     popup.classList.remove('active');
     overlay.classList.remove('active');
 }
-
-
-var counter = 0;
-
-function changeInfoPartLeft(){
-    
-}
-function changeInfoPartRight(){
-
-}
-
 
 var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -119,29 +109,39 @@ function drawMap(world, population, history) {
         .on('click', function(d) {
             var info = d.history.information;
             var partinfo = [{},{},{},{},{}];
+            var dotIndex = [0,{},{},{},{},{},{},{},{},{},{},{},{},{},{}];
+            for(let i = 1; i < 15; i++)
+            {
+                dotIndex[i] = info.indexOf('.', dotIndex[i-1] + 2);
+                if(dotIndex[i] == -1)
+                    break;
+                console.log(dotIndex[i]);
+            }
             for(let i = 0; i < 3; i++)
             {
                 let start = i * 600;
-                partinfo[i] = info.substr(start, 600);
+                partinfo[i] = info.substr(dotIndex[i*6 - 1] + 1, (dotIndex[(i+1)*6 - 1] + 1));
             }
 
             openPopup(popup);
             d3.select(".title")
             .text(d.properties.name)
             d3.select(".information")
-            .text(partinfo[counter] + '...');
+            .text(partinfo[counter]);
+            
             document.getElementById('left-arrow').onclick = function() {  
                 if(counter > 0 && partinfo[counter-1].length != 0)
                     counter--;
                 d3.select(".information")
-                .text(partinfo[counter] + '...');  
+                .text(partinfo[counter]);  
             };
             document.getElementById('right-arrow').onclick = function() {  
                 if(counter < 4 && partinfo[counter+1].length != 0)
                     counter++;
                 d3.select(".information")
-                .text(partinfo[counter] + '...');  
+                .text(partinfo[counter]);  
             };
+
             document.getElementById('country-flag').src = d.history.flag;
             
         })
