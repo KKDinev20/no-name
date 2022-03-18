@@ -164,6 +164,8 @@
     height: 11%;
     display:flex;
     align-items : center;
+    position: fixed;
+    width: 100%;
   }
 
   .nav-buttons {
