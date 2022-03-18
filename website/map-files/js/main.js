@@ -122,7 +122,7 @@ function drawMap(world, population, history) {
                 let start = i * 600;
                 partinfo[i] = info.substr(dotIndex[i*6 - 1] + 1, (dotIndex[(i+1)*6 - 1] + 1));
             }
-
+            counter = 0;
             openPopup(popup);
             d3.select(".title")
             .text(d.properties.name)
