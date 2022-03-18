@@ -112,7 +112,7 @@ function drawMap(world, population, history) {
             var dotIndex = [0,{},{},{},{},{},{},{},{},{},{},{},{},{},{}];
             for(let i = 1; i < 15; i++)
             {
-                dotIndex[i] = info.indexOf('.', dotIndex[i-1] + 2);
+                dotIndex[i] = info.indexOf('. ', dotIndex[i-1] + 2);
                 if(dotIndex[i] == -1)
                     break;
             }
