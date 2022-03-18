@@ -255,9 +255,10 @@ path {
 #country-flag{
   width: 20%;
   height: 14%;
-  padding-right: 15px;
+  margin-right: 15px;
   float: left;
   position: static;
+  border: 1px solid black;
 }
 
 .information{

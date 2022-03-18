@@ -115,7 +115,6 @@ function drawMap(world, population, history) {
                 dotIndex[i] = info.indexOf('.', dotIndex[i-1] + 2);
                 if(dotIndex[i] == -1)
                     break;
-                console.log(dotIndex[i]);
             }
             for(let i = 0; i < 3; i++)
             {
