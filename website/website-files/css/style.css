@@ -15,6 +15,7 @@ body, ::placeholder {
     background-color: white !important;
     font-weight: bold;
 }
+
 body {
   background-color: #009fe1 !important;
   margin: 0;
@@ -175,10 +176,9 @@ input[type=submit]:hover {
   height: 0;
   top: 0;
   opacity: 0;
-  padding: 18px 8%;
-  background-color: white;
-  overflow-y: scroll;
-  transition: 0.8s ease;
+  padding: 50% 8%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.35s ease;
   overflow: hidden;
 }
 
@@ -186,6 +186,7 @@ input[type=submit]:hover {
   opacity: 1;
   height: 100%;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* MAP CSS */
@@ -194,6 +195,7 @@ path {
   stroke-width: 0.45px;
   fill: #808080;
 }
+
 .details {
   top: 0px;
   visibility: hidden;
@@ -205,6 +207,7 @@ path {
   background-color: aliceblue;
   font-size: 50px;
 }
+
 .popup{
   position: fixed;
   top: 50%;
@@ -218,9 +221,11 @@ path {
   width: 500px;
   max-width: 80%;
 }
+
 .popup.active{
   transform: translate(-50%, -50%) scale(1);
 }
+
 .popup-header{
   padding: 10px 15px;
   display: flex;
@@ -228,10 +233,12 @@ path {
   align-items: center;
   border-bottom: 1px solid black;
 }
+
 .popup-header .title{
   font-size: 1.25rem;
   font-weight: bold;
 }
+
 .popup-header .close-button{
   cursor: pointer;
   border: none;
@@ -240,9 +247,11 @@ path {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
 .popup-body{
   padding: 10px 15px;
 }
+
 #country-flag{
   width: 20%;
   height: 14%;
@@ -250,9 +259,11 @@ path {
   float: left;
   position: static;
 }
+
 .information{
   text-align: justify;
 }
+
 #overlay{
   position: fixed;
   opacity: 0;
@@ -264,26 +275,38 @@ path {
   background-color: rgba(0, 0, 0, .5);
   pointer-events: none;
 }
+
 #overlay.active{
   opacity: 1;
   pointer-events: all;
   
 }
+
 .arrows{
   display: flex;
   float: right;
   padding-bottom: 10px;
 }
+
 #left-arrow{
   padding-right: 10px;
   font-size: 200%;
   border:none;
   background-color: white;
 }
+
 #right-arrow{
   padding-left: 10px;
   padding-right: 30px;
   font-size: 200%;
   border:none;
   background-color: white;
+}
+
+#right-arrow, #left-arrow {
+    cursor: pointer;
+}
+
+.home {
+  display: none;
 }
