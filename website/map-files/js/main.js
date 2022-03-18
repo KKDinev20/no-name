@@ -23,14 +23,10 @@ function closePopup(popup){
 var counter = 0;
 
 function changeInfoPartLeft(){
-    if(counter > 0)
-        counter--;
-        console.log(counter);
+    
 }
 function changeInfoPartRight(){
-    if(counter < 4)
-        counter++;
-        console.log(counter);
+
 }
 
 
@@ -135,12 +131,14 @@ function drawMap(world, population, history) {
             d3.select(".information")
             .text(partinfo[counter] + '...');
             document.getElementById('left-arrow').onclick = function() {  
-                changeInfoPartLeft();
+                if(counter > 0 && partinfo[counter-1].length != 0)
+                    counter--;
                 d3.select(".information")
                 .text(partinfo[counter] + '...');  
             };
             document.getElementById('right-arrow').onclick = function() {  
-                changeInfoPartRight();
+                if(counter < 4 && partinfo[counter+1].length != 0)
+                    counter++;
                 d3.select(".information")
                 .text(partinfo[counter] + '...');  
             };
