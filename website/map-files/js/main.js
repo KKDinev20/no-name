@@ -128,7 +128,7 @@ function drawMap(world, population, history) {
                     break;
                 }
                 else
-                partinfo[i] = info.slice(dotIndex[i*5 - 1] + 1, (dotIndex[(i+1)*5 - 1] + 1));
+                partinfo[i] = info.slice(dotIndex[i*6 - 1] + 1, (dotIndex[(i+1)*6 - 1] + 1) || info.length - 1);
             }
             if(shortInfo){
                 document.getElementById('right-arrow').style.visibility = "hidden";
@@ -162,8 +162,8 @@ function drawMap(world, population, history) {
                     d3.select(".information")
                     .text(partinfo[0]);
                 }
-                else{  
-                    if(counter < 4 && partinfo[counter+1].length != 0)
+                else{
+                    if(counter < 4 && partinfo[counter+1].length != 0 && partinfo[counter+1].length != info.length - 1)
                         counter++;
                     d3.select(".information")
                     .text(partinfo[counter]);
