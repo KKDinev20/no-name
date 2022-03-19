@@ -1,6 +1,10 @@
+//Important parameters
+
 const overlay = document.getElementById('overlay');
 const popup = document.getElementById('popup');
 var counter = 0;
+
+//Initializing the modal
 
 overlay.addEventListener('click', () => {
     const popups = document.querySelectorAll('.popup.active')
@@ -19,6 +23,8 @@ function closePopup(popup){
     popup.classList.remove('active');
     overlay.classList.remove('active');
 }
+
+//Initializing the map
 
 var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -53,6 +59,8 @@ d3.queue()
             drawMap(world, population, history);
         }
     });
+
+//Showing the map
 
 function drawMap(world, population, history) {
     // geoMercator projection
@@ -92,6 +100,8 @@ function drawMap(world, population, history) {
         d.history = historyById[d.properties.name] ? historyById[d.properties.name] : {};
     });
 
+    //Initializing the information in the modal
+
     map.append("g")
         .selectAll("path")
         .data(features)
@@ -126,22 +136,32 @@ function drawMap(world, population, history) {
                     partinfo[0] = info;
                     shortInfo = true;
                     break;
+
                 }
-                else
-                partinfo[i] = info.slice(dotIndex[i*6 - 1] + 1, (dotIndex[(i+1)*6 - 1] + 1) || info.length - 1);
+                else {
+                    partinfo[i] = info.slice(dotIndex[i*6 - 1] + 1, (dotIndex[(i+1)*6 - 1] + 1) || info.length - 1);
+                }
+                    
             }
+
+            partinfo = [...new Set(partinfo)]
+
             if(shortInfo){
                 document.getElementById('right-arrow').style.visibility = "hidden";
                 document.getElementById('left-arrow').style.visibility = "hidden"
+                document.getElementById('page').style.visibility = "hidden"
             }
             else{
             document.getElementById('right-arrow').style.visibility = "visible";
             document.getElementById('left-arrow').style.visibility = "visible";
+            document.getElementById('page').style.visibility = "visible";
             }
             counter = 0;
             openPopup(popup);
-            d3.select(".title")
+            d3.select(".title")            
             .text(d.properties.name)
+            d3.select("#page")
+            .text(`Page ${counter+1}/${partinfo.length-1}`)
             d3.select(".information")
             .text(partinfo[counter]);
             
@@ -154,7 +174,7 @@ function drawMap(world, population, history) {
                     if(counter > 0 && partinfo[counter-1].length != 0)
                         counter--;
                     d3.select(".information")
-                    .text(partinfo[counter]); 
+                    .text(partinfo[counter]);
                 }
             };
             document.getElementById('right-arrow').onclick = function() {
@@ -167,6 +187,8 @@ function drawMap(world, population, history) {
                         counter++;
                     d3.select(".information")
                     .text(partinfo[counter]);
+                    d3.select("#page")
+                    .text(`Page ${counter+1}/${partinfo.length-1}`)
                 }
             };
 
@@ -183,8 +205,5 @@ function drawMap(world, population, history) {
             d3.select(this)
                 .style("stroke", null)
                 .style("stroke-width", 0.25);
-
-            d3.select('.details')
-                .style('visibility', "hidden");
         });
 }

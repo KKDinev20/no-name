@@ -164,7 +164,8 @@
     height: 11%;
     display:flex;
     align-items : center;
-    position: fixed;
+  position: sticky;
+  top: 0;
     width: 100%;
   }
 
@@ -183,9 +184,6 @@
     color: black;
   }
 
-  h1 {
-    margin-top: 10;
-  }
 
   #logo-dekstop, .home {
     left: 0;
