@@ -408,7 +408,7 @@
                "type":"Polygon",
                "id":"BIH",
                "properties":{
-                  "name":"Bosnia and Herz."
+                  "name":"Bosnia and Herzegovina"
                },
                "arcs":[
                   [
@@ -587,7 +587,7 @@
                "type":"Polygon",
                "id":"CAF",
                "properties":{
-                  "name":"Central African Rep."
+                  "name":"Central African Republic"
                },
                "arcs":[
                   [
@@ -1198,7 +1198,7 @@
                "type":"MultiPolygon",
                "id":"CNM",
                "properties":{
-                  "name":"Cyprus U.N. Buffer Zone"
+                  "name":"Cyprus"
                },
                "arcs":[
                   [
