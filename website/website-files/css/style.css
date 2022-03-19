@@ -219,7 +219,7 @@ path {
   z-index: 10;
   background-color: white;
   width: 500px;
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .popup.active{

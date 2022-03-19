@@ -108,18 +108,35 @@ function drawMap(world, population, history) {
         })
         .on('click', function(d) {
             var info = d.history.information;
-            var partinfo = [{},{},{},{},{}];
-            var dotIndex = [0,{},{},{},{},{},{},{},{},{},{},{},{},{},{}];
-            for(let i = 1; i < 15; i++)
+            var partinfo = [];
+            var dotIndex = [];
+            var shortInfo = false;
+            for(let i = 1; i < 20; i++)
             {
                 dotIndex[i] = info.indexOf('. ', dotIndex[i-1] + 2);
+                console.log(dotIndex.length);
+                console.log(dotIndex[i]);
+                console.log(info.length);
                 if(dotIndex[i] == -1)
                     break;
             }
-            for(let i = 0; i < 3; i++)
+            for(let i = 0; i < 5; i++)
             {
-                let start = i * 600;
-                partinfo[i] = info.substr(dotIndex[i*6 - 1] + 1, (dotIndex[(i+1)*6 - 1] + 1));
+                if(dotIndex.length <= 7){
+                    partinfo[0] = info;
+                    shortInfo = true;
+                    break;
+                }
+                else
+                partinfo[i] = info.slice(dotIndex[i*5 - 1] + 1, (dotIndex[(i+1)*5 - 1] + 1));
+            }
+            if(shortInfo){
+                document.getElementById('right-arrow').style.visibility = "hidden";
+                document.getElementById('left-arrow').style.visibility = "hidden"
+            }
+            else{
+            document.getElementById('right-arrow').style.visibility = "visible";
+            document.getElementById('left-arrow').style.visibility = "visible";
             }
             counter = 0;
             openPopup(popup);
@@ -128,17 +145,29 @@ function drawMap(world, population, history) {
             d3.select(".information")
             .text(partinfo[counter]);
             
-            document.getElementById('left-arrow').onclick = function() {  
-                if(counter > 0 && partinfo[counter-1].length != 0)
-                    counter--;
-                d3.select(".information")
-                .text(partinfo[counter]);  
+            document.getElementById('left-arrow').onclick = function() { 
+                if(shortInfo){
+                    d3.select(".information")
+                    .text(partinfo[0]);
+                }
+                else{
+                    if(counter > 0 && partinfo[counter-1].length != 0)
+                        counter--;
+                    d3.select(".information")
+                    .text(partinfo[counter]); 
+                }
             };
-            document.getElementById('right-arrow').onclick = function() {  
-                if(counter < 4 && partinfo[counter+1].length != 0)
-                    counter++;
-                d3.select(".information")
-                .text(partinfo[counter]);  
+            document.getElementById('right-arrow').onclick = function() {
+                if(shortInfo){
+                    d3.select(".information")
+                    .text(partinfo[0]);
+                }
+                else{  
+                    if(counter < 4 && partinfo[counter+1].length != 0)
+                        counter++;
+                    d3.select(".information")
+                    .text(partinfo[counter]);
+                }
             };
 
             document.getElementById('country-flag').src = d.history.flag;
