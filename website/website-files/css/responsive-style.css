@@ -21,6 +21,15 @@
 
 @media screen and (max-width: 800px) {
 
+  body {
+    text-align: center;
+    background-image: url(../Images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100%;
+  }
+
   #nav > #logo-dekstop {
     display: none;
     padding: 0px;
@@ -164,8 +173,8 @@
     height: 11%;
     display:flex;
     align-items : center;
-  position: sticky;
-  top: 0;
+    position: sticky;
+    top: 0;
     width: 100%;
   }
 

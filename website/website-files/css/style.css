@@ -12,15 +12,18 @@ body, html {
 
 body, ::placeholder {
     font-family: 'Raleway', sans-serif;
-    background-color: white !important;
     font-weight: bold;
 }
 
 body {
-  background-color: #009fe1 !important;
-  margin: 0;
+    text-align: center;
+    background-image: url(../Images/background.png);
+    background-position: center;
+    background-size: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
 }
-
 
 h1 {
     user-select: none;
@@ -28,14 +31,6 @@ h1 {
     padding: 3%;
     font-size: 2.5em;
     color: white;
-}
-
-body {
-    text-align: center;
-    background-image: url(../Images/background.png);
-    background-position: center;
-    background-size: cover;
-    height: 100%;
 }
 
 #menu-toggle, #closebtn {
