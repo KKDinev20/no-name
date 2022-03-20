@@ -167,7 +167,6 @@
 
   #nav {
     justify-content:end;
-    border-bottom: 3px solid #ddd;
     background-color: white;
     vertical-align: middle;
     height: 11%;
@@ -176,13 +175,13 @@
     position: sticky;
     top: 0;
     width: 100%;
+    height: 8%;
   }
 
   .nav-buttons {
     display:flex;
     align-items : center;
     justify-content: center;
-    border: 1px solid black;
     width: 80px;
     height: 70px;
     transition-property: all;
@@ -197,7 +196,7 @@
   #logo-dekstop, .home {
     left: 0;
     margin: 1.2% 1.2%;
-    width: 150px;
+    width: 130px;
     height: auto;
     margin-right: auto;
     display: block;
@@ -206,8 +205,8 @@
   .nav-buttons:hover{
     background:#000;
     color: white;
-    height: 95px;
-    width: 95px;
+    height: 65px;
+    width: 75px;
   }
 }
 
