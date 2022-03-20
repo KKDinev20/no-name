@@ -124,9 +124,6 @@ function drawMap(world, population, history) {
             for(let i = 1; i < 20; i++)
             {
                 dotIndex[i] = info.indexOf('. ', dotIndex[i-1] + 2);
-                console.log(dotIndex.length);
-                console.log(dotIndex[i]);
-                console.log(info.length);
                 if(dotIndex[i] == -1)
                     break;
             }

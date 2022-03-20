@@ -161,14 +161,27 @@
     width: 200px;
     margin: 0 auto;
   }
+
+  .active-navbutton {
+    background: #00040F !important;
+    color: white !important;
+  }
 }
 
 @media screen and (min-width: 801px) {
+
+  .active-navbutton {
+    background: #00040F !important;
+    color: white !important;
+    height: 65px !important;
+    width: 75px !important; 
+  }
 
   #nav {
     justify-content:end;
     background-color: white;
     vertical-align: middle;
+    border-bottom: 3px solid #ddd;
     height: 11%;
     display:flex;
     align-items : center;
@@ -186,7 +199,7 @@
     height: 70px;
     transition-property: all;
     transition-duration: .2s;
-    margin-right: 2%;
+    margin-right: 1.5%;
     text-decoration: none;
     background: #fff;
     color: black;
@@ -203,7 +216,7 @@
   }
 
   .nav-buttons:hover{
-    background:#000;
+    background:#00040F;
     color: white;
     height: 65px;
     width: 75px;
@@ -230,6 +243,6 @@
   }
 
   #nav {
-    height: 15%;
+    height: 11% !important;
   }
 }
