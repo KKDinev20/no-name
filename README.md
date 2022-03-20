@@ -38,4 +38,5 @@
 <h2>You can download the project in two ways:
   <h3>1. <i>Go to Code > Download ZIP</i> to download the project.</h3>
 <h3>2. Copy the following thing in your cmd: <u>git clone https://github.com/KKDinev20/no-name</u></h3>
+  <h3>3. Click <a href = "http://no-name.gq/" target="_blank"> here</a> in order to open it</h3>
 </h2>
