@@ -126,6 +126,10 @@ input[type=submit]:hover {
 
 /* ABOUT US PAGE CSS */
 
+#mission-title {
+  color: black;
+}
+
 #team, .member, .member-title, .member, .member-desc {
   margin: 0;
   overflow: hidden;
@@ -184,6 +188,11 @@ input[type=submit]:hover {
 }
 
 /* MAP CSS */
+#map-style {
+  background:#009fe1; 
+  overflow: hidden;
+}
+
 path {
   stroke: rgb(7, 7, 7);
   stroke-width: 0.45px;
