@@ -5,7 +5,7 @@
 <br></br>
 
 <h1>🖥️ Main Idea</h1>
-<p><h3>Our idea was to make a website that shows each country's demographics such as the population and the year of foundation.</h3></p>
+<p><h3>Our idea was to make a website that shows information about each country.</h3></p>
 <br>
 <h1>📋 Details</h1>
 <p><h2>The project represents a website with three categories: Home, About and Contact. </h2>
